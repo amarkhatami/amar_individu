@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<link rel="shortcut icon" href="img/img4.png"><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+		</script></link>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+		<title>AMAR KHATAMI</title>
+
+			<style>
+
+				::-webkit-scrollbar {
+					height: auto;
+					width: 0px;
+					background: #FFECEE;
+					}
+
+				::-webkit-scrollbar-thumb {
+					background: powderblue;
+					border-radius: 100px;
+					}
+
+				]]></b:skin>
+	
+				body {
+					background-color: white;
+					}
+
+				a:link,a:visited {
+					text-decoration: none; 
+					color: #008080; 
+					transition-duration: 0.3s;
+					font-weight: none;
+					}
+
+				a:hover {
+					text-decoration: none; 
+					color: #008080;
+					font-weight: none;
+					text-decoration: underline;
+					transition-duration: 0.3s;
+					}
+
+				h1 {
+					font-size: 40px; 
+					color: white; 
+					font-stye: none; 
+					font-family: rubik;  
+					padding: 0px; 
+					border-radius: 0px; 
+					text-align: center;
+					border: 0px dotted tomato;
+					transition-duration: 0.3s;
+					}
+
+				h2 {
+					font-size: 15px; 
+					font-style: none;
+					font-weight: bold;
+					text-decoration: none;
+					color: black; 
+					font-family: rubik; 
+					}
+
+				h3 {
+					font-size: 15px; 
+					font-style: none;
+					font-weight: bold;
+					text-decoration: none;
+					color: black; 
+					font-family: rubik; 
+					text-transform: uppercase;
+					padding-bottom: 10px;
+					border-bottom: 1px solid #eee;
+					text-align: center;
+					}
+
+				h4 {
+					font-size: 12px; 
+					font-style: none;
+					font-weight: none;
+					text-decoration: none;
+					color: black; 
+					font-family: rubik; 
+					text-transform: none;
+					padding-bottom: 0px;
+					border-bottom: 0px solid #eee;
+					text-align: center;
+					}    
+
+				p {
+					text-align: justify;
+					font-size: 15px; 
+					font-style: none;
+					text-decoration: none;
+					color: black; 
+					font-family: rubik; 
+					background-color: ; 
+					padding: 20px; 
+					border-radius: 0px; 
+					margin: auto;
+					margin-bottom: 30px;
+					transition-duration: 0.3s;
+					border: 0px solid #008080;
+					}	
+
+				img {
+					margin-left: auto;
+					margin-right: auto;
+					width: 200px;
+					height: auto;
+					border: 0px solid #4E8975;
+					border-radius: 10px;
+					margin: 8px;
+					transition-duration: 0.3s;
+					box-shadow: 4px 4px 4px #ddd;
+					}
+
+				img:hover {
+					border: 0px solid #008080;
+    				transition-duration: 0.3s;
+					}	
+
+				ul {
+					list-style-type: none;
+					margin: auto;
+					margin-bottom: 10px;
+					padding: 10px;
+					overflow: hidden;
+					border: 0px solid #4E8975;
+					background-color: #4E8975;
+					color: white;
+					border-radius: 0px 0px 10px 10px;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 20px 15px 0px #f1f1f1;
+					}
+                    
+                 .robot {
+                 list-style-type: none;
+					margin: auto;
+					margin-bottom: 10px;
+					padding: 10px;
+					overflow: hidden;
+					border: 0px solid #4E8975;
+					background-color: #4E8975;
+					color: white;
+					border-radius: 0px 0px 10px 10px;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 0px 0px 0px #;}   
+
+				li {
+					float: center;
+					margin: auto;
+					display: inline;
+					font-color: white;
+					}
+
+				li a:link, a:visited {
+					color: white;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;
+					font-weight: none;
+					}   
+
+				li a.active {
+					color: white;
+					text-align: center;
+					text-decoration: none;
+					background-color: #008080;
+					}
+
+				li a:hover:not(.active) {
+					background-color: #008080;
+					color: white;
+					font-weight: none;
+					}
+
+				.nav {
+					display: block;
+					margin-bottom: 10px;
+					padding: 0px;
+					border-radius: 10px;
+					background-color: white;
+					width: 100%;
+                    box-shadow: 0px 0px 0px 0px #000;
+					}
+
+				.nav a:link {
+					background-color: #eeeeee;
+					color: #4E8975;
+					display: block;
+					margin: auto;
+					padding: 5px;
+					border-radius: 10px;
+					}
+
+				.nav a:link, a:visited {
+					background-color: #4E8975;
+					color: white;
+					}
+
+				.nav a:hover {
+					background-color: white;
+					width: 90%;
+					}    
+
+				.jumbotron { 
+					background-color: #008080;
+					border-radius: 0px;
+					margin-top: 0px;
+					margin: auto;
+					transition-duration: 0.3s;
+					}
+
+				.jumbotron:hover {
+					background-color: ;
+					transition-duration: 0.3s;
+					}
+
+				.jumbotron1 {
+					background-color: #4E8975;
+					border-radius: 10px 10px 0px 0px;
+					margin-top: 80px;
+					transition-duration: 0.3s;
+					text-align: center;
+					padding: 20px;
+                    box-shadow: 0px -20px 15px 0px #f1f1f1;
+					}
+
+				p1 {
+					color: white;
+					font-family: rubik;
+					font-size: 12px;
+					}
+
+				.author {
+					border-radius: 100px;
+					border: 5px solid #4E8975;
+					width: 150px;
+					height: auto;
+					margin-top: 20px;
+					}
+
+				.author:hover {
+					border: 5px solid #008080;
+					}
+
+				#back2Top {
+					overflow: hidden;
+					z-index: 999;
+					display: none;
+					cursor: pointer;
+					position: fixed;
+					bottom: 80px;
+					right: 30px;
+					background-color: #4E8975;
+					color: #fff;
+					text-align: center;
+					font-size: 15px;
+					text-decoration: none;
+					padding: 10px;
+					border-radius: 100%;
+					}
+  
+				#back2Top:hover {
+					background-color: #008080;
+					color: #fff;
+					}
+                    
+                    
+                #sebelum {
+					padding:0px;
+					}
+
+				#selepas {
+					width:100%;
+					height:40px;
+					display:none;
+					position:fixed;
+					top:0;
+					left:0;
+					opacity:1;
+					z-index:10;
+					padding:0px;
+					text-align:center;
+					box-shadow: 0px 20px 15px 0px #f1f1f1;
+					}
+
+				.navisatu a {
+					list-style-type: none;
+					margin: ;
+					margin-bottom: 10px;
+					padding: 10px;
+					overflow: hidden;
+					border: 0px solid #4E8975;
+					background-color: #4E8975;
+					color: white;
+					border-radius: 0px 0px 10px 10px;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 0px 0px 0px #f1f1f1;
+					}
+
+				.navisatu a:hover {
+					list-style-type: none;
+                    text-decoration:none;
+					padding: auto;
+                    padding-top:14px;
+                    padding-bottom:14px;
+                    border-radius:0px;
+					overflow: hidden;
+					border: 0px solid #4E8975;
+					background-color: #008080;
+					color: white;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 0px 0px 0px #f1f1f1;
+					}
+
+				.navidua a {
+					list-style-type: none;
+					margin: ;
+					margin-bottom: 10px;
+					padding: 10px;
+					overflow: hidden;
+					border: 0px solid #4E8975;
+					background-color: #4E8975;
+					color: white;
+					border-radius: 0px 0px 10px 10px;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 0px 0px 0px #;
+                    }
+
+				.navidua a:hover {
+					list-style-type: none;
+                    text-decoration:none;
+					padding: auto;
+                    padding-top:14px;
+                    padding-bottom:14px;
+                    border-radius:0px;
+					overflow: hidden;
+					border: 0px solid #4E8975;
+					background-color: #008080;
+					color: white;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 0px 0px 0px #f1f1f1;
+
+			</style>
+	</head>
+	
+	<body>
+
+		<div class="jumbotron">
+			<h1>AMAR KHATAMI</h1>
+		</div>
+
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+				<center>
+				<div id="sebelum">
+				<div class="navisatu">
+				<ul>
+					<a class="active" href="index.html">HOME</a>
+					<a href="about.html">ABOUT</a>
+					<a href="interest.html">INTEREST</a>
+					<a href="gallery.html">GALLERY</a>
+				</ul>
+				</div></div></center>
+
+				<div id="selepas"><div class="navidua"><div class="robot">
+					<a class="active" href="index.html">HOME</a>
+					<a href="about.html">ABOUT</a>
+					<a href="interest.html">INTEREST</a>
+					<a href="gallery.html">GALLERY</a>
+				</div></div></div></center>
+
+				<script>
+				$(document).ready(function() {
+				var headerTop = $('#sebelum').offset().top;
+				var headerBottom = headerTop + 10; // Sub-menu should appear after this distance from top.
+				$(window).scroll(function () {
+				var scrollTop = $(window).scrollTop(); // Current vertical scroll position from the top
+				if (scrollTop > headerBottom) { // Check to see if we have scrolled more than headerBottom
+                if (($("#selepas").is(":visible") === false)) {
+                    $('#selepas').fadeIn('fast');
+					}
+				} else {
+                if ($("#selepas").is(":visible")) {
+                    $('#selepas').hide();
+					}
+					}
+					});
+					});
+				</script>
+
+
+		<div class="container" style="margin-top:50px">
+			<div class="row">
+				<div class="col-sm-4">
+        
+					<h2>The Author</h2>
+						<center>
+						<img class="author" style="box-shadow: 0px 0px 0px #fff;" src="img/img1.jpg">
+						</center>
+						<p style="text-align:left;">Amar Khatami, a twenty years old independent/freelance blogger and photographer based in Selangor, Malaysia.</p>
+
+					<h2>Chatbox</h2><br>
+						<iframe src="https://www6.cbox.ws/box/?boxid=852386&boxtag=KyJpLU" width="100%" height="150" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+		
+						<br><br><br>
+
+					<h2>Social Media</h2><br>
+						<ul class="nav">
+							<li class="nav">
+								<a class="nav" target="_blank" href="http://twitter.com/amarkhatami">Twitter</a>
+							</li>
+							<li class="nav">
+								<a class="nav" target="_blank" href="http://instagram.com/amarkhatami">Instagram</a>
+							</li>
+							<li class="nav">
+								<a class="nav" target="_blank" href="http://facebook.com/amarkhatami">Facebook</a>
+							</li>
+							<li class="nav">
+								<a class="nav" target="_blank" href="http://mailto:28amarkhatami@gmail.com">Email</a>
+							</li>
+							<li class="nav">
+								<a class="nav" target="_blank" href="http://instagram.com/worngarments">worn garments</a>
+							</li>
+						</ul>
+
+						<br><br>
+	
+					<div style="width: 100%;">
+						<center>
+						<audio controls autoplay loop>
+						<source src="piano.ogg" type="audio/ogg">
+						<source src="piano.mp3" type="audio/mpeg">
+						</audio>
+						</center>
+					</div>
+        
+					<hr class="d-sm-none">
+				</div>
+
+
+				<div class="col-sm-8">
+					
+					<h3>MALAYSIAN UNIVERSITY ENGLISH TEST (MUET)</h3>
+					<h4>September 23, 2020</h4>
+					
+						
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hi there. In this post, I'm going to talk about a very important test or examination that every students need to take in order to continue their studies for degree. It is the Malaysian University English Test or better know by a lot of people by its acronym, MUET. According to <a href="https://en.wikipedia.org/wiki/Malaysian_University_English_Test#:~:text=From%20Wikipedia%2C%20the%20free%20encyclopedia,Sijil%20Tinggi%20Persekolahan%20Malaysia%20examination).">Wikipedia</a>, MUET is a test of English proficiency that is largely for university admissions. The test or examination is set and run by the Malaysian Examination Councils which also runs the Sijil Tinggi Persekolah Malaysia (STPM) examination. 
+                            
+                          <br><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; On Wednesday, September 23, my friends and I went to Sekolah Menengah Kebangsaan Mantin, Negeri Sembilan in order to take our first MUET test. The first MUET is the speaking test which requires us to be in a group of four and discuss on a certain topic. So, on that day, Emir, Hafiz and I went to KTM Rembau to take our morning trip at 7:12 a.m. to KTM Batang Benar which is very close to SMK Mantin. When we arrived at KTM Batang Benar, we met up with Muzhaffar and Nadira, which is the one that drived us to the school.    
+						</p>
+                        
+                            <center><img src="img/img23.jpg" style="width:50%; "><img src="img/img22.jpg" style="width:50%; "><img src="img/img21.jpg" style="width:50%; "></center>
+                            
+                           <br>
+                           
+                           <p>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It took a few hours before the test ended. Muzhaffar and I was separated into different groups with other students, however, Emir, Hafiz and Nadira was destined to be in the same group with one different student.  Alhamdulillah, all of us managed to do our best during the speaking test and we were all happy and satisfied with our performances. 
+                            
+						</p>
+
+					<h3>WORN GARMENTS DECEMBER DROP</h3>
+					<h4>December 1, 2020</h4>
+						
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi there. In this post, I'm going to talk about the recent clothes that I will be selling at my Instagram shop called <a href="htpp://instagram.com/worngarments">Worn Garments</a>. I haven't updated the Instagram in a while because I didn't find anything that worth selling in the thrift stores. However, I've been sourcing from various online thrift stores in order to sell it on the page. There will be a total of 13 pieces that will be uploaded on the page. However, I haven't photograph and edit some of the items yet because some of them haven't arrived yet. Here are some of the pieces: 
+                            
+                            </p>
+                           
+                           <center><img src="img/img28.jpg" style="width:30%; "><img src="img/img29.jpg" style="width:30%; "><img src="img/img30.jpg" style="width:30%; "></center>
+                           
+                           <br>
+                           
+                           <p>
+                           
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First of all, the Polo Ralph Lauren Work Jacket. The jacket is very suitable for people to wear as a layering piece because it is a black jacket and pretty much an essential piece of clothing. It features the navy classic polo logo on the chest with zipper detailing. Next is the Vintage Nike Small Swoosh Zipper Hoodie. This hoodie is from the 1990s which is a very old piece. The colour of the hoodie is maroon which is very interesting and pretty. It features a black-coloured small swoosh on the chest area with the zipper detailing. It is a medium size which is a very common size for a lot of Malaysians. The third piece is the Vintage Chicago Symphony Orchestra Tee from 1995. The graphic that is printed on the front of the t-shirt is very beautiful. It is a portrait of a couple violins and celos. Eventhough it is a vintage and old piece, the condition of this t-shirt is almost like new. 
+                            
+                            </p>
+                            
+                            <center><img src="img/img32.jpg" style="width:30%; "><img src="img/img26.jpg" style="width:30%; "><img src="img/img27.jpg" style="width:30%; "></center>
+                            
+                            <br>
+                            
+                            <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The fourth item is the Vintage The Moon Tee from the 1992. This t-shirt is older in age to be compared with the Chicago t-shirt. However, I decided to not sell this piece because of the gorgeous graphic on the front. The fifth item is the Levi's 505 Straight Cut Denim Jeans. This is actually a personal piece, however, I decided to sell it because I'm planning to buy another jeans in slightly different colour. Last but not least, the second pants that I will  be selling is the United Arrows "Pink Label" Six Pockets Cargo Pants. This is also a personal piece, however, the reason I decided to sell it is because the waist is a little big on me, so it doesn't fit the way I wanted it to be. This is a Japanese brand and the piece is also made in Japan. The quality of this item is amazing with all the details that can be found on it.
+                          
+                            
+						</p>
+
+					
+				</div>
+			</div>
+		</div>
+
+		<script>
+			/*Scroll to top when arrow up clicked BEGIN*/
+			$(window).scroll(function() {
+				var height = $(window).scrollTop();
+				if (height > 100) {
+					$('#back2Top').fadeIn();
+					} else {
+					$('#back2Top').fadeOut();
+					}
+				});
+	
+			$(document).ready(function() {
+			$("#back2Top").click(function(event) {
+				event.preventDefault();
+			$("html, body").animate({ scrollTop: 0 }, "slow");
+				return false;
+				});
+
+				});
+			/*Scroll to top when arrow up clicked END*/
+		</script>
+
+		<a id="back2Top" title="Back to top" href="#">Top</a>
+
+
+
+		<div class="jumbotron1">
+			<p1>© 2020 <a href="#" style="color: white;">AMAR KHATAMI</a> ALL RIGHTS RESERVED</p1>
+		</div>
+
+
+	</body>
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<link rel="shortcut icon" href="img/img4.png"><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+		</script></link>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+		<title>AMAR KHATAMI</title>
+
+			<style>
+
+				::-webkit-scrollbar {
+					height: auto;
+					width: 0px;
+					background: #FFECEE;
+					}
+
+				::-webkit-scrollbar-thumb {
+					background: powderblue;
+					border-radius: 100px;
+					}
+
+				]]></b:skin>
+	
+				body {
+					background-color: white;
+					}
+
+				a:link,a:visited {
+					text-decoration: none; 
+					color: #008080; 
+					transition-duration: 0.3s;
+					font-weight: none;
+					}
+
+				a:hover {
+					text-decoration: none; 
+					color: #008080;
+					font-weight: none;
+					text-decoration: underline;
+					transition-duration: 0.3s;
+					}
+
+				h1 {
+					font-size: 40px; 
+					color: white; 
+					font-stye: none; 
+					font-family: rubik;  
+					padding: 0px; 
+					border-radius: 0px; 
+					text-align: center;
+					border: 0px dotted tomato;
+					transition-duration: 0.3s;
+					}
+
+				h2 {
+					font-size: 15px; 
+					font-style: none;
+					font-weight: bold;
+					text-decoration: none;
+					color: black; 
+					font-family: rubik; 
+					}
+
+				h3 {
+					font-size: 15px; 
+					font-style: none;
+					font-weight: bold;
+					text-decoration: none;
+					color: black; 
+					font-family: rubik; 
+					text-transform: uppercase;
+					padding-bottom: 10px;
+					border-bottom: 1px solid #eee;
+					text-align: center;
+					}
+
+				h4 {
+					font-size: 12px; 
+					font-style: none;
+					font-weight: none;
+					text-decoration: none;
+					color: black; 
+					font-family: rubik; 
+					text-transform: none;
+					padding-bottom: 0px;
+					border-bottom: 0px solid #eee;
+					text-align: center;
+					}    
+
+				p {
+					text-align: justify;
+					font-size: 15px; 
+					font-style: none;
+					text-decoration: none;
+					color: black; 
+					font-family: rubik; 
+					background-color: ; 
+					padding: 20px; 
+					border-radius: 0px; 
+					margin: auto;
+					margin-bottom: 30px;
+					transition-duration: 0.3s;
+					border: 0px solid #008080;
+					}	
+
+				img {
+					margin-left: auto;
+					margin-right: auto;
+					width: 200px;
+					height: auto;
+					border: 0px solid #4E8975;
+					border-radius: 10px;
+					margin: 8px;
+					transition-duration: 0.3s;
+					box-shadow: 4px 4px 4px #ddd;
+					}
+
+				img:hover {
+					border: 0px solid #008080;
+    				transition-duration: 0.3s;
+					}	
+
+				ul {
+					list-style-type: none;
+					margin: auto;
+					margin-bottom: 10px;
+					padding: 10px;
+					overflow: hidden;
+					border: 0px solid #4E8975;
+					background-color: #4E8975;
+					color: white;
+					border-radius: 0px 0px 10px 10px;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 20px 15px 0px #f1f1f1;
+					}
+                    
+                 .robot {
+                 list-style-type: none;
+					margin: auto;
+					margin-bottom: 10px;
+					padding: 10px;
+					overflow: hidden;
+					border: 0px solid #4E8975;
+					background-color: #4E8975;
+					color: white;
+					border-radius: 0px 0px 10px 10px;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 0px 0px 0px #;}   
+
+				li {
+					float: center;
+					margin: auto;
+					display: inline;
+					font-color: white;
+					}
+
+				li a:link, a:visited {
+					color: white;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;
+					font-weight: none;
+					}   
+
+				li a.active {
+					color: white;
+					text-align: center;
+					text-decoration: none;
+					background-color: #008080;
+					}
+
+				li a:hover:not(.active) {
+					background-color: #008080;
+					color: white;
+					font-weight: none;
+					}
+
+				.nav {
+					display: block;
+					margin-bottom: 10px;
+					padding: 0px;
+					border-radius: 10px;
+					background-color: white;
+					width: 100%;
+                    box-shadow: 0px 0px 0px 0px #000;
+					}
+
+				.nav a:link {
+					background-color: #eeeeee;
+					color: #4E8975;
+					display: block;
+					margin: auto;
+					padding: 5px;
+					border-radius: 10px;
+					}
+
+				.nav a:link, a:visited {
+					background-color: #4E8975;
+					color: white;
+					}
+
+				.nav a:hover {
+					background-color: white;
+					width: 90%;
+					}    
+
+				.jumbotron { 
+					background-color: #008080;
+					border-radius: 0px;
+					margin-top: 0px;
+					margin: auto;
+					transition-duration: 0.3s;
+					}
+
+				.jumbotron:hover {
+					background-color: ;
+					transition-duration: 0.3s;
+					}
+
+				.jumbotron1 {
+					background-color: #4E8975;
+					border-radius: 10px 10px 0px 0px;
+					margin-top: 80px;
+					transition-duration: 0.3s;
+					text-align: center;
+					padding: 20px;
+                    box-shadow: 0px -20px 15px 0px #f1f1f1;
+					}
+
+				p1 {
+					color: white;
+					font-family: rubik;
+					font-size: 12px;
+					}
+
+				.author {
+					border-radius: 100px;
+					border: 5px solid #4E8975;
+					width: 150px;
+					height: auto;
+					margin-top: 20px;
+					}
+
+				.author:hover {
+					border: 5px solid #008080;
+					}
+
+				#back2Top {
+					overflow: hidden;
+					z-index: 999;
+					display: none;
+					cursor: pointer;
+					position: fixed;
+					bottom: 80px;
+					right: 30px;
+					background-color: #4E8975;
+					color: #fff;
+					text-align: center;
+					font-size: 15px;
+					text-decoration: none;
+					padding: 10px;
+					border-radius: 100%;
+					}
+  
+				#back2Top:hover {
+					background-color: #008080;
+					color: #fff;
+					}
+                    
+                    
+                #sebelum {
+					padding:0px;
+					}
+
+				#selepas {
+					width:100%;
+					height:40px;
+					display:none;
+					position:fixed;
+					top:0;
+					left:0;
+					opacity:1;
+					z-index:10;
+					padding:0px;
+					text-align:center;
+					box-shadow: 0px 20px 15px 0px #f1f1f1;
+					}
+
+				.navisatu a {
+					list-style-type: none;
+					margin: ;
+					margin-bottom: 10px;
+					padding: 10px;
+					overflow: hidden;
+					border: 0px solid #4E8975;
+					background-color: #4E8975;
+					color: white;
+					border-radius: 0px 0px 10px 10px;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 0px 0px 0px #f1f1f1;
+					}
+
+				.navisatu a:hover {
+					list-style-type: none;
+                    text-decoration:none;
+					padding: auto;
+                    padding-top:14px;
+                    padding-bottom:14px;
+                    border-radius:0px;
+					overflow: hidden;
+					border: 0px solid #4E8975;
+					background-color: #008080;
+					color: white;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 0px 0px 0px #f1f1f1;
+					}
+
+				.navidua a {
+					list-style-type: none;
+					margin: ;
+					margin-bottom: 10px;
+					padding: 10px;
+					overflow: hidden;
+					border: 0px solid #4E8975;
+					background-color: #4E8975;
+					color: white;
+					border-radius: 0px 0px 10px 10px;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 0px 0px 0px #;
+                    }
+
+				.navidua a:hover {
+					list-style-type: none;
+                    text-decoration:none;
+					padding: auto;
+                    padding-top:14px;
+                    padding-bottom:14px;
+                    border-radius:0px;
+					overflow: hidden;
+					border: 0px solid #4E8975;
+					background-color: #008080;
+					color: white;
+					font-family: rubik;
+					font-weight: none;
+					text-transform: uppercase;
+                    box-shadow: 0px 0px 0px 0px #f1f1f1;
+
+			</style>
+	</head>
+	
+	<body>
+
+		<div class="jumbotron">
+			<h1>AMAR KHATAMI</h1>
+		</div>
+
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+				<center>
+				<div id="sebelum">
+				<div class="navisatu">
+				<ul>
+					<a class="active" href="index.html">HOME</a>
+					<a href="about.html">ABOUT</a>
+					<a href="interest.html">INTEREST</a>
+					<a href="gallery.html">GALLERY</a>
+				</ul>
+				</div></div></center>
+
+				<div id="selepas"><div class="navidua"><div class="robot">
+					<a class="active" href="index.html">HOME</a>
+					<a href="about.html">ABOUT</a>
+					<a href="interest.html">INTEREST</a>
+					<a href="gallery.html">GALLERY</a>
+				</div></div></div></center>
+
+				<script>
+				$(document).ready(function() {
+				var headerTop = $('#sebelum').offset().top;
+				var headerBottom = headerTop + 10; // Sub-menu should appear after this distance from top.
+				$(window).scroll(function () {
+				var scrollTop = $(window).scrollTop(); // Current vertical scroll position from the top
+				if (scrollTop > headerBottom) { // Check to see if we have scrolled more than headerBottom
+                if (($("#selepas").is(":visible") === false)) {
+                    $('#selepas').fadeIn('fast');
+					}
+				} else {
+                if ($("#selepas").is(":visible")) {
+                    $('#selepas').hide();
+					}
+					}
+					});
+					});
+				</script>
+
+
+		<div class="container" style="margin-top:50px">
+			<div class="row">
+				<div class="col-sm-4">
+        
+					<h2>The Author</h2>
+						<center>
+						<img class="author" style="box-shadow: 0px 0px 0px #fff;" src="img/img1.jpg">
+						</center>
+						<p style="text-align:left;">Amar Khatami, a twenty years old independent/freelance blogger and photographer based in Selangor, Malaysia.</p>
+
+					<h2>Chatbox</h2><br>
+						<iframe src="https://www6.cbox.ws/box/?boxid=852386&boxtag=KyJpLU" width="100%" height="150" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+		
+						<br><br><br>
+
+					<h2>Social Media</h2><br>
+						<ul class="nav">
+							<li class="nav">
+								<a class="nav" target="_blank" href="http://twitter.com/amarkhatami">Twitter</a>
+							</li>
+							<li class="nav">
+								<a class="nav" target="_blank" href="http://instagram.com/amarkhatami">Instagram</a>
+							</li>
+							<li class="nav">
+								<a class="nav" target="_blank" href="http://facebook.com/amarkhatami">Facebook</a>
+							</li>
+							<li class="nav">
+								<a class="nav" target="_blank" href="http://mailto:28amarkhatami@gmail.com">Email</a>
+							</li>
+							<li class="nav">
+								<a class="nav" target="_blank" href="http://instagram.com/worngarments">worn garments</a>
+							</li>
+						</ul>
+
+						<br><br>
+	
+					<div style="width: 100%;">
+						<center>
+						<audio controls autoplay loop>
+						<source src="piano.ogg" type="audio/ogg">
+						<source src="piano.mp3" type="audio/mpeg">
+						</audio>
+						</center>
+					</div>
+        
+					<hr class="d-sm-none">
+				</div>
+
+
+				<div class="col-sm-8">
+					
+					<h3>FASHION IS MY PASSION</h3>
+					<h4></h4>
+
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hi there. One of my passions or interests is fashion. I have been into fashion or clothing in general since I was a kid. When I was younger, the most important accessories that I need to wear everytime is a watch. As a result, I had to change and buy new watches numerous times due to the wear of it, sometimes the watch got lost too. 
+							<br><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; When I got into middle school on 2007, I started to take care on how I dressed. In 2016 and 2017, the most famous shoe brand in my school is Supra. Supra is an American shoe brand that was founded in California and launched back in 2006. Supra has been worn by a lot of famous and professional skateboarders such as Chad Muska, Jim Greco, and Erik Ellington. A lot of my friends had at least one pair of Supra. At that time, Supra is a quite expensive but I managed to buy a pair in grey colourway. Other than that, one of the famous trends is wearing coloured pants. For example, me and my friends would wear a graphic t-shirt with brown, maroon, mustard-coloured pants in order to look fashionable. </p>
+
+							<center><img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2014%2F11%2Fsupra-footwear-the-hunger-games-skytop-iv-black-friday-1.jpg?q=75&w=800&cbr=1&fit=max" style="width: 50%; margin-top: 0px;"><br><div style="font-size:15px;font-family:rubik;">Source: <a target="_blank" href="http://hypebeast.com/2014/11/supra-footwear-the-hunger-games-skytop-iv-black-friday">Hypebeast</a></div>
+							</center>
+							<br>
+
+						<p>
+
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As time passes and trends changes, I started to get more serious in fashion. When I was in high school, in 2013, the fashion trend is to wear skinny pants. Almost every students in my school especially the famous students, all of them altered their school pants and made it skinny. Other than that, I started to get myself into buying and wearing secondhand or thrift clothes. I bought a few pieces such as flannels, jeans and even shoes in the thrift because the price is cheaper and secondhand clothes are different to be compared with all the fast-fashion brands such as H&M and Uniqlo. 
+							<br><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In my early years of diploma in Universiti Teknologi Mara (UiTM) Kampus Rembau, I started an online thrift or secondhand clothing store with my friend, Amin Mahmood, called <a href="htpp://instagram.com/bundlesarat">Bundle Sarat</a>. We went to multiple thrift stores in order to source for clothing such as flannels, pants and jackets to sell at university for the students. In my fourth semester, I decided to open my own online thrift store where I can handle the business by myself, called <a href="htpp://instagram.com/worngarments">Worn Garments</a>. I sell a lot of different clothes from top to bottom to people not only in Malaysia, but also other countries. For example, I once sold a vintage Disney t-shirt to a customer from United States, a Dior knitwear to a customer from United Kingdom, a vintage Disney and Subwear t-shirts to a Canadian customer and more.</p>
+
+							<center><img src="img/img19.jpg" style="width: 50%;"><br><div style="font-size:15px;font-family:rubik;">Source: <a target="_blank" style="color:#008080;" href="http://www.instagram.com/p/CFW_3SyhRuK/">Instagram</a></div>
+							</center>
+							<br>
+
+						<p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Since I was 18 years old, I have been exploring and studying a lot about the fashion industry. I watched a lot of videos on Youtube that are related to the fashion industry such as interview of famous fashion designer, runaway shows, fashion week, the backstory of a brand and more. There are a lot of brands in different genres that I like. For luxury brands, I am most attracted to Gucci, because of the fabrics, colours and luxury-vibe that the brand has. For streetwear, my favourite brand would be Reese Cooper. Reese Cooper is a 21 years old fashion designer based in Los Angeles. Reese Cooper has been featured in various fashion magazines such as Vogue, Mens Journal, Mr. Porter and more. He also has been nominated as one of the nominees for American Emerging Designer of the Year for 2020 CFDA Fashion Awards. 
+
+							<center><img src="https://assets.vogue.com/photos/5f076731cb8e0ace4ff8e9f9/master/w_480%2Cc_limit/00008-Reese-Cooper-Mens-SS21.jpg" style="width: 40%;"><br><div style="font-size:15px;font-family:rubik;">Source: <a target="_blank" href="http://www.vogue.com/fashion-shows/spring-2021-menswear/reese-cooper">Vogue</a></div>
+							</center>
+
+						</p>
+
+				</div>
+			</div>
+		</div>
+
+		<script>
+			/*Scroll to top when arrow up clicked BEGIN*/
+			$(window).scroll(function() {
+				var height = $(window).scrollTop();
+				if (height > 100) {
+					$('#back2Top').fadeIn();
+					} else {
+					$('#back2Top').fadeOut();
+					}
+				});
+	
+			$(document).ready(function() {
+			$("#back2Top").click(function(event) {
+				event.preventDefault();
+			$("html, body").animate({ scrollTop: 0 }, "slow");
+				return false;
+				});
+
+				});
+			/*Scroll to top when arrow up clicked END*/
+		</script>
+
+		<a id="back2Top" title="Back to top" href="#">Top</a>
+
+
+
+		<div class="jumbotron1">
+			<p1>© 2020 <a href="#" style="color: white;">AMAR KHATAMI</a> ALL RIGHTS RESERVED</p1>
+		</div>
+
+
+	</body>
+</html>
